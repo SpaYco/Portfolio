@@ -1,1 +1,235 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2c3e50;
+}
+
+html body * {
+  font-family: 'Montserrat', sans-serif;
+  color: #ecf0f1;
+}
+
+html body .me {
+  background: url(../media/space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid black;
+}
+
+html body .me * {
+  margin: 15px 0;
+}
+
+html body .me #profile-link {
+  font-size: 25px;
+  font-weight: 700;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  border-bottom: 3px solid transparent;
+}
+
+html body .me #profile-link:hover {
+  border-bottom: 3px solid #ecf0f1;
+}
+
+html body .me a {
+  text-decoration: none;
+}
+
+html body .me .social a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .me .social .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+html body .me .social .fa-linkedin-in:hover {
+  color: #007bb5;
+}
+
+html body .me .social .fa-github:hover {
+  color: #171515;
+}
+
+html body .me .social .fa-facebook-f:hover {
+  color: #1877f2;
+}
+
+html body .me .social .fa-link:hover {
+  color: #ecf0f1;
+}
+
+html body .me .social i {
+  font-size: 25px;
+  margin: 15px 5px;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+html body .me .social i:hover {
+  background-color: #ffffff5d;
+  -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.555);
+          box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.555);
+}
+
+html body .me img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+html body .projects {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 70vw;
+  height: 100%;
+  padding: 25px 0;
+}
+
+html body .projects hr {
+  width: 70vw;
+  margin: 10px 0;
+}
+
+html body .projects .project {
+  width: 80%;
+  margin: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .projects .project * {
+  margin: 15px 0;
+}
+
+html body .projects .project .title {
+  font-size: 35px;
+  display: inline;
+}
+
+html body .projects .project .title .name {
+  display: inline;
+  color: #e74c3c;
+}
+
+html body .projects .project .description {
+  width: 60%;
+  padding: 15px;
+  position: relative;
+  border: 3px solid #ecf0f1;
+}
+
+html body .projects .project .description::before {
+  content: 'Description';
+  position: absolute;
+  font-size: 16px;
+  top: -10px;
+  left: calc(50% - 46px);
+  background-color: #2c3e50;
+  padding: 0 5px;
+}
+
+html body .projects .project img {
+  width: 40vw;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
+}
+
+html body .projects .project .project-link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body .projects .project .project-link a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  border: 3px solid transparent;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+  padding: 3px;
+}
+
+html body .projects .project .project-link a .fab,
+html body .projects .project .project-link a .fas {
+  margin-right: 5px;
+}
+
+html body .projects .project .project-link a * {
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+html body .projects .project .project-link a:hover {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+}
+
+html body .projects .project .project-link a:hover .fa-github {
+  color: #171515;
+}
+
+html body .projects .project .project-link a:hover .fa-globe {
+  color: #2c3e50;
+}
+/*# sourceMappingURL=main.css.map */

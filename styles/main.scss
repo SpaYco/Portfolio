@@ -1,5 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$dark: #2c3e50;
+$light: #ecf0f1;
+
+
 html {
     body {
-        
+        height: 100vh;
+        width: 100vw;
+        background-color: $dark;
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            color: $light;
+        }
+
+        .me {
+            background: url(../media/space.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 30vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid black;
+
+            * {
+                margin: 15px 0;
+            }
+
+            #profile-link {
+                font-size: 25px;
+                font-weight: 700;
+                transition: 350ms;
+                border-bottom: 3px solid transparent;
+
+                &:hover {
+                    border-bottom: 3px solid $light;
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .social {
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .fa-twitter {
+                    &:hover {
+                        color: #1da1f2;
+                    }
+                }
+
+                .fa-linkedin-in {
+                    &:hover {
+                        color: #007bb5;
+                    }
+                }
+
+                .fa-github {
+                    &:hover {
+                        color: #171515;
+                    }
+                }
+
+                .fa-facebook-f {
+                    &:hover {
+                        color: #1877f2;
+                    }
+                }
+
+                .fa-link {
+                    &:hover {
+                        color: $light;
+                    }
+                }
+
+                i {
+                    font-size: 25px;
+                    margin: 15px 5px;
+                    transition: 350ms;
+                    line-height: 50px;
+                    height: 50px;
+                    width: 50px;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #ffffff5d;
+                        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.555);
+                    }
+
+                }
+            }
+
+            img {
+                width: 15vw;
+                height: 15vw;
+                border-radius: 50%;
+            }
+        }
+
+        .projects {
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 70vw;
+            height: 100%;
+            padding: 25px 0;
+
+            hr {
+                width: 70vw;
+                margin: 10px 0;
+            }
+
+            .project {
+                * {
+                    margin: 15px 0;
+                }
+
+                width: 80%;
+                margin: 0 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .title {
+                    font-size: 35px;
+                    display: inline;
+
+                    .name {
+                        display: inline;
+                        color: #e74c3c;
+                    }
+                }
+
+                .description {
+                    width: 60%;
+                    padding: 15px;
+                    position: relative;
+                    border: 3px solid $light;
+
+                    &::before {
+                        content: 'Description';
+                        position: absolute;
+                        font-size: 16px;
+                        top: -10px;
+                        left: calc(50% - 46px);
+                        background-color: $dark;
+                        padding: 0 5px;
+                    }
+                }
+
+                img {
+                    width: 40vw;
+                    border-radius: 3px;
+                    box-shadow: 0 0 5px white;
+                }
+
+                .project-link {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+
+                        .fab,
+                        .fas {
+                            margin-right: 5px;
+                        }
+
+                        text-decoration: none;
+                        font-size: 25px;
+                        font-weight: 500;
+                        border: 3px solid transparent;
+                        transition: 350ms;
+                        padding: 3px;
+
+                        * {
+                            transition: 350ms;
+                        }
+
+                        &:hover {
+                            color: $dark;
+                            background-color: $light;
+
+                            .fa-github {
+                                color: #171515;
+                            }
+
+                            .fa-globe {
+                                color: $dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
