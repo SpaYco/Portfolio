@@ -1,6 +1,6 @@
 # Project Name
 
-> Google Homepage.
+> Portfolio.
 
 ![screenshot](./demo.png)
 
