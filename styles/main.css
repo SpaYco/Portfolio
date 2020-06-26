@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html body {
@@ -32,14 +31,14 @@ html body .me {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-right: 1px solid black;
 }
 
@@ -68,11 +67,11 @@ html body .me .social a {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html body .me .social .fa-twitter:hover {
@@ -110,7 +109,7 @@ html body .me .social i {
 html body .me .social i:hover {
   background-color: #ffffff5d;
   -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.555);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.555);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.555);
 }
 
 html body .me img {
@@ -144,14 +143,14 @@ html body .projects .project {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html body .projects .project * {
@@ -189,7 +188,7 @@ html body .projects .project img {
   width: 40vw;
   border-radius: 3px;
   -webkit-box-shadow: 0 0 5px white;
-  box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
 }
 
 html body .projects .project .project-link {
@@ -198,8 +197,8 @@ html body .projects .project .project-link {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 html body .projects .project .project-link a {
@@ -240,11 +239,11 @@ html body .projects #more {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 0;
 }
 
@@ -269,34 +268,53 @@ html body .projects #more a:hover {
     width: auto;
     height: auto;
   }
-
   html body .projects {
     position: static;
     width: auto;
     height: auto;
   }
-
   html body .projects hr {
     width: 100vw;
   }
-
   html body .projects .project .title {
     font-size: 23px;
   }
-
   html body .projects .project .project-link a {
     font-size: 19px;
   }
-
   html body .projects .project .description {
     font-size: 14px;
+    width: 70vw;
   }
-
   html body .projects .project .description::before {
     font-size: 14px;
   }
-
   html body .projects .project img {
     width: 80vw;
   }
 }
+
+@media all and (max-width: 390px) {
+  html body .me .social a i {
+    font-size: 20px;
+    margin: 10px 3px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+  html body .projects .project .title {
+    font-size: 19px;
+  }
+  html body .projects .project .project-link a {
+    font-size: 15px;
+  }
+  html body .projects .project .description {
+    font-size: 12px;
+    width: 90vw;
+  }
+  html body .projects .project .description::before {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
