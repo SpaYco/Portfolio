@@ -1,13 +1,13 @@
 const Main = () => (
-  <nav>
-    <ul>
+  <main>
+    {/* <ul>
       <li>placeholder</li>
       <li>placeholder</li>
       <li>placeholder</li>
       <li>placeholder</li>
       <li>placeholder</li>
-    </ul>
-  </nav>
+    </ul> */}
+  </main>
 );
 
 export default Main;
