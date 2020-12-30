@@ -8,16 +8,16 @@ const Nav = ({ toggleMenu }) => (
   <nav className={`${toggleMenu ? 'show-menu' : ''}`}>
     <ul>
       <li name="About Me">
-        <FontAwesomeIcon icon={faHome} />
+        <Link activeClass="active" to="about" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faHome} /></Link>
       </li>
       <li name="Projects">
-        <FontAwesomeIcon icon={faCode} />
+        <Link activeClass="active" to="projects" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faCode} /></Link>
       </li>
       <li name="Resume">
-        <FontAwesomeIcon icon={faFile} />
+        <Link activeClass="active" to="resume" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faFile} /></Link>
       </li>
       <li name="Contact Me">
-        <FontAwesomeIcon icon={faAt} />
+        <Link activeClass="active" to="contact" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faAt} /></Link>
       </li>
     </ul>
   </nav>

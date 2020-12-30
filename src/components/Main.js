@@ -1,12 +1,14 @@
+import About from './About';
+import Projects from './Projects';
+import Resume from './Resume';
+import Contact from './Contact';
+
 const Main = () => (
   <main>
-    {/* <ul>
-      <li>placeholder</li>
-      <li>placeholder</li>
-      <li>placeholder</li>
-      <li>placeholder</li>
-      <li>placeholder</li>
-    </ul> */}
+    <About />
+    <Projects />
+    <Resume />
+    <Contact />
   </main>
 );
 

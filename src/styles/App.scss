@@ -18,6 +18,19 @@ body {
   // background-size: 100vw 100vh;
   // background-repeat: no-repeat;
   background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+
+  #tsparticles {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 @import './Nav';
