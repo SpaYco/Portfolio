@@ -1,5 +1,5 @@
 const Contact = () => (
-  <div id="contact">
+  <div id="contact" className="card">
     <p>Hello</p>
   </div>
 );

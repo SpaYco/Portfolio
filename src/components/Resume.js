@@ -1,5 +1,5 @@
 const Resume = () => (
-  <div id="resume">
+  <div id="resume" className="card">
     <p>Hello</p>
   </div>
 );

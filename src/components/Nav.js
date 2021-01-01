@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faHome, faFile, faCode, faAt,
+  faIdCard, faFile, faCode, faAt,
 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
 
@@ -8,7 +8,7 @@ const Nav = ({ toggleMenu }) => (
   <nav className={`${toggleMenu ? 'show-menu' : ''}`}>
     <ul>
       <li name="About Me">
-        <Link activeClass="active" to="about" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faHome} /></Link>
+        <Link activeClass="active" to="about" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faIdCard} /></Link>
       </li>
       <li name="Projects">
         <Link activeClass="active" to="projects" spy smooth offset={50} duration={500}><FontAwesomeIcon icon={faCode} /></Link>

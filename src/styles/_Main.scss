@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px 0;
+  margin: 25px 0;
+  background-color: $black;
+  border: 1px solid $gray;
+  width: 75vw;
+  min-height: 25vh;
+
+  .title {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.9em;
+    font-style: italic;
+    text-decoration: underline;
+    color: $lightRed;
+  }
+}
+
+#about {
+  .description {
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 1.2em;
+
+    li {
+      list-style-type: '👉';
+      margin-left: 5%;
+    }
+  }
+}
