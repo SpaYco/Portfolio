@@ -1,4 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Title from './Title';
 
 const skills = ['Front-end development: ReactJS', 'Back-end development: Ruby on Rails', 'Databases: MySql', 'Infra: Netlify | Heroku', 'Styling: CSS| SASS | MaterializeCSS | Bootstrap', 'Remote and Collaborative work experience'];
@@ -12,8 +15,20 @@ const About = () => (
       <br />
       During my 1 year of experience in making personal projects on my GitHub, I&apos;ve learned:
       <ul>
-        {skills.map(skill => (<li key={uuidv4()}>{skill}</li>))}
+        {skills.map(skill => (
+          <li key={uuidv4()}>
+            <FontAwesomeIcon icon={faAngleDoubleRight} />
+            {' '}
+            {skill}
+          </li>
+        ))}
       </ul>
+      <br />
+      Find My Social Links in the
+      {' '}
+      <Link activeClass="active" to="contact" spy smooth offset={50} duration={500}><p className="smooth-link">Contact</p></Link>
+      {' '}
+      section
     </p>
   </div>
 );

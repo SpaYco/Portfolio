@@ -35,6 +35,19 @@ body {
     right: 0;
     z-index: -5;
   }
+
+  .smooth-link {
+    display: inline;
+    text-decoration: underline;
+    font-weight: bold;
+    color: $lightRed;
+  }
+}
+
+iframe {
+  width: 95%;
+  max-width: 8.5in;
+  height: 11in;
 }
 
 @import './scrollbar';
