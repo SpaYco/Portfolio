@@ -6,14 +6,16 @@ const Projects = () => {
   const [lists, setLists] = useState([]);
 
   useEffect(async () => {
-    const syncedList = fetch('https://api.github.com/users/SpaYco/repos?sort=pushed').then(response => response.json());
+    const syncedList = fetch('https://api.github.com/users/SpaYco/repos?sort=updated').then(response => response.json());
     setLists(await syncedList);
   }, []);
 
   return (
     <div id="projects" className="card">
       <Title title="Projects" />
-      {lists.map(project => (<ProjectCard key={project.id} project={project} />))}
+      <div id="project-list">
+        {lists.map(project => (<ProjectCard key={project.id} project={project} />))}
+      </div>
     </div>
   );
 };

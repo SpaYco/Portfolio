@@ -15,9 +15,6 @@ $white : #d4d4d4;
 }
 
 body {
-  // background: url('../media/background.jpg');
-  // background-size: 100vw 100vh;
-  // background-repeat: no-repeat;
   background-color: $black;
   display: flex;
   justify-content: center;
@@ -41,6 +38,13 @@ body {
     text-decoration: underline;
     font-weight: bold;
     color: $lightRed;
+    cursor: pointer;
+    transition: 350ms;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
   }
 }
 
