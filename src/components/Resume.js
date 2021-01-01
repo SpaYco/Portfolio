@@ -1,4 +1,4 @@
-import Title from './Title';
+import Title from './Tittle';
 
 const Resume = () => (
   <div id="resume" className="card">
