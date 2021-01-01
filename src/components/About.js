@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import Title from './Title';
+import Title from './Tittle';
 
 const skills = ['Front-end development: ReactJS', 'Back-end development: Ruby on Rails', 'Databases: MySql', 'Infra: Netlify | Heroku', 'Styling: CSS| SASS | MaterializeCSS | Bootstrap', 'Remote and Collaborative work experience'];
 
