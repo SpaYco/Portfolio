@@ -26,7 +26,7 @@ const About = () => (
       <br />
       Find My Social Links in the
       {' '}
-      <Link activeClass="active" to="contact" spy smooth offset={50} duration={500}><p className="smooth-link">Contact</p></Link>
+      <Link activeClass="active" to="contact" spy smooth offset={50} duration={1500}><p className="smooth-link">Contact</p></Link>
       {' '}
       section
     </p>
