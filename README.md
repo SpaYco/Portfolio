@@ -1,42 +1,44 @@
-# Project Name
+# Portfolio
 
-> Portfolio.
+> This is a a portfolio to show case my projects
 
-![screenshot](./demo.png)
-
-This Is My Personal Portfolio
+![screenshot](./screenshot.png)
 
 ## Built With
 
 - HTML
 - CSS
+- SCSS
+- JavaScript
+- React
+- GitHub API
 
-## Live Demo
+## Live Link
 
-[Live Demo Link](https://spayco.github.io/Portfolio)
+[spayco.dev](https://spayco.dev/)
 
 
-### Usage
+## Getting Started
 
-- open index.html file
+- `yarn install`
+- `yarn start`
 
-## Authors
+## Author
 
 👤 **SpaYco**
 
 - Github: [@SpaYco](https://github.com/SpaYco)
 - Twitter: [@iSpaYco](https://twitter.com/iSpaYco)
-- Linkedin: [Aziz Mejri](https://www.linkedin.com/in/spayco/)
+- Linkedin: [Aziz Mejri](https://linkedin.com/in/spayco)
 
-## 🤝 Contributing
+## Credits
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+Favicon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
 ## 📝 License
 
-This project is [MIT](LICENSE) licensed.
+This project is [MIT](lic.url) licensed.
