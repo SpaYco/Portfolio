@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Title from './Title';
 
-const skills = ['Front-end development: ReactJS', 'Back-end development: Ruby on Rails', 'Databases: MySql', 'Infra: Netlify | Heroku', 'Styling: CSS| SASS | MaterializeCSS | Bootstrap', 'Remote and Collaborative work experience'];
+const skills = ['Front-end development: ReactJS', 'Back-end development: Ruby on Rails', 'Databases: MySql | PostgreSQL', 'Infra: Netlify | Heroku', 'Styling: CSS| SASS | MaterializeCSS | Bootstrap', 'Remote and Collaborative work experience'];
 
 const About = () => (
   <div id="about" className="card">
