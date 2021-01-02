@@ -19,22 +19,22 @@ const Contact = () => (
         {' '}
         Email
       </a>
-      <a href="link.com" className="contact-btn" rel="noreferrer" target="_blank">
+      <a href="https://github.com/Spayco" className="contact-btn" rel="noreferrer" target="_blank">
         <FontAwesomeIcon icon={faGithubAlt} />
         {' '}
         GitHub
       </a>
-      <a href="link.com" className="contact-btn" rel="noreferrer" target="_blank">
+      <a href="https://www.linkedin.com/in/spayco/" className="contact-btn" rel="noreferrer" target="_blank">
         <FontAwesomeIcon icon={faLinkedin} />
         {' '}
         LinkedIn
       </a>
-      <a href="link.com" className="contact-btn" rel="noreferrer" target="_blank">
+      <a href="https://twitter.com/iSpaYco" className="contact-btn" rel="noreferrer" target="_blank">
         <FontAwesomeIcon icon={faTwitter} />
         {' '}
         Twitter
       </a>
-      <a href="link.com" className="contact-btn" rel="noreferrer" target="_blank">
+      <a href="https://angel.co/u/spayco" className="contact-btn" rel="noreferrer" target="_blank">
         <FontAwesomeIcon icon={faAngellist} />
         {' '}
         AngelList
