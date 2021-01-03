@@ -18,7 +18,7 @@ const StyledA = styled.a`
 /* stylelint-disable */
 
 background-image: url(https://raw.githubusercontent.com/${props => props.project.full_name}/${props => props.project.default_branch}/screenshot.png), url(${notfound});
-background-size: 100% 100%;
+background-size: 100% auto;
 background-repeat: no-repeat;
 height: 25vh;
 `;
