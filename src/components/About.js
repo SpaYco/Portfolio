@@ -1,5 +1,4 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 import Contact from './Contact';
@@ -24,11 +23,6 @@ const About = () => (
         ))}
       </ul>
       <br />
-      Find My Social Links in the
-      {' '}
-      <Link activeClass="active" to="contact" spy smooth offset={50} duration={1500}><p className="smooth-link">Contact</p></Link>
-      {' '}
-      section
     </p>
     <Contact customClassName="card no-border" />
   </div>

@@ -1,26 +1,18 @@
-import styled from 'styled-components';
-import notfound from '../media/notfound.jpg';
-
 const ProjectCard = ({ project }) => (
-  <StyledA
-    project={project}
-    href={`https://github.com/${project.full_name}`}
-    className="project-card"
-    target="_blank"
-  >
-    <h1>
-      {project.name}
-    </h1>
-  </StyledA>
+  <div className="project-card">
+
+    <div className="screenshot-container">
+      <img src={`https://raw.githubusercontent.com/${project.full_name}/${project.default_branch}/screenshot.png`} alt={project.full_name} />
+    </div>
+    <div className="information-container">
+      <h1>{project.name}</h1>
+      <h2>{project.description}</h2>
+      <div className="links">
+        <a href={`https://github.com/${project.full_name}/`} target="_blank" rel="noreferrer">GitHub Repo</a>
+        <a href={project.live_demo} target="_blank" rel="noreferrer">Live Demo</a>
+      </div>
+    </div>
+  </div>
 );
-
-const StyledA = styled.a`
-/* stylelint-disable */
-
-background-image: url(https://raw.githubusercontent.com/${props => props.project.full_name}/${props => props.project.default_branch}/screenshot.png), url(${notfound});
-background-size: 100% auto;
-background-repeat: no-repeat;
-height: 25vh;
-`;
 
 export default ProjectCard;
