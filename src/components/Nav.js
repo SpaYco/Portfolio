@@ -14,6 +14,12 @@ const Nav = ({ toggleMenu }) => (
         </Link>
       </li>
       <li>
+        <Link activeClass="active" to="contact" spy smooth offset={50} duration={1500}>
+          <FontAwesomeIcon icon={faAt} />
+          <p>Contact Me</p>
+        </Link>
+      </li>
+      <li>
         <Link activeClass="active" to="projects" spy smooth offset={50} duration={1500}>
           <FontAwesomeIcon icon={faCode} />
           <p>Projects</p>
@@ -23,12 +29,6 @@ const Nav = ({ toggleMenu }) => (
         <Link activeClass="active" to="resume" spy smooth offset={50} duration={1500}>
           <FontAwesomeIcon icon={faFile} />
           <p>Resume</p>
-        </Link>
-      </li>
-      <li>
-        <Link activeClass="active" to="contact" spy smooth offset={50} duration={1500}>
-          <FontAwesomeIcon icon={faAt} />
-          <p>Contact Me</p>
         </Link>
       </li>
     </ul>
