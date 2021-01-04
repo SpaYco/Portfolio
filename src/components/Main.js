@@ -8,7 +8,7 @@ const Main = () => (
     <About />
     <Projects />
     <Resume />
-    <Contact />
+    <Contact customClassName="card" />
   </main>
 );
 
