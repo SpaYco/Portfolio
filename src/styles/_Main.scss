@@ -36,6 +36,14 @@
   font-family: 'Montserrat', cursive;
 }
 
+#resume-text {
+  font-size: 1.5vw;
+
+  a {
+    color: $lightRed;
+  }
+}
+
 #project-list {
   width: 100%;
   display: flex;
@@ -139,14 +147,6 @@
         }
       }
     }
-  }
-}
-
-#resume-text {
-  font-size: 1.5vw;
-
-  a {
-    color: $lightRed;
   }
 }
 
