@@ -1,5 +1,5 @@
 const Title = ({ title }) => (
-  <h1 className="glitch" data-text={title}>
+  <h1 className="title" data-text={title}>
     {title}
   </h1>
 );

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
 .card {
   display: flex;
   align-items: center;
@@ -22,6 +24,16 @@
       margin-left: 5%;
     }
   }
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 7.5vw;
+  text-align: center;
+  margin-left: 0.5em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', cursive;
 }
 
 #project-list {
