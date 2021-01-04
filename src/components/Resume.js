@@ -4,7 +4,11 @@ const Resume = () => (
   <div id="resume" className="card">
     <Title title="Resume" />
 
-    <iframe title="my resume" src="https://docs.google.com/document/d/e/2PACX-1vSqJhe4yK4EacgMGhPWheCLhQsmWN7QXXu99Dxb2-C1kK2KDEfLcL8r8IHA35Lbp2xDGRtGKZD2Bw7L/pub?embedded=true" />
+    <p id="resume-text">
+      you can check my resume
+      {' '}
+      <a href="https://docs.google.com/document/d/1lYq0Kb50TujzJzDWGobIchRI17JMnAiZMF9OBQgNU68/edit?usp=sharing" target="_blank" rel="noreferrer">here</a>
+    </p>
   </div>
 );
 

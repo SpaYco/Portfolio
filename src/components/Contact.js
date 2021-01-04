@@ -3,16 +3,14 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faGithubAlt,
+  faGithub,
   faTwitter,
   faLinkedin,
   faAngellist,
 } from '@fortawesome/free-brands-svg-icons';
-import Title from './Title';
 
-const Contact = () => (
-  <div id="contact" className="card">
-    <Title title="Contact" />
+const Contact = ({ customClassName }) => (
+  <div id="contact" className={customClassName}>
     <div id="contact-list">
       <a href="mailto:zizou.aziz101@gmail.com" className="contact-btn" rel="noreferrer" target="_blank">
         <FontAwesomeIcon icon={faEnvelope} />
@@ -20,7 +18,7 @@ const Contact = () => (
         Email
       </a>
       <a href="https://github.com/Spayco" className="contact-btn" rel="noreferrer" target="_blank">
-        <FontAwesomeIcon icon={faGithubAlt} />
+        <FontAwesomeIcon icon={faGithub} />
         {' '}
         GitHub
       </a>
