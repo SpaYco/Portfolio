@@ -3,7 +3,7 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faGithubAlt,
+  faGithub,
   faTwitter,
   faLinkedin,
   faAngellist,
@@ -18,7 +18,7 @@ const Contact = ({ customClassName }) => (
         Email
       </a>
       <a href="https://github.com/Spayco" className="contact-btn" rel="noreferrer" target="_blank">
-        <FontAwesomeIcon icon={faGithubAlt} />
+        <FontAwesomeIcon icon={faGithub} />
         {' '}
         GitHub
       </a>
