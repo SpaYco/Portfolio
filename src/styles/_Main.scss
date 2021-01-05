@@ -154,6 +154,10 @@
 }
 
 @media (max-width: 1024px) {
+  #resume-text {
+    font-size: 3vw;
+  }
+
   #project-list {
     .project-card {
       flex-direction: column;
@@ -166,6 +170,10 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 25px;
       padding: 25px;
+
+      .contact-btn {
+        font-size: 2.5vw;
+      }
     }
   }
 }
