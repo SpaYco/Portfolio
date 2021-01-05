@@ -1,6 +1,6 @@
 nav {
   background-color: $black;
-  border-left: 0.5px solid $darRed;
+  border-left: 0.5px solid $darkRed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,10 +39,10 @@ nav {
       }
 
       &:hover {
-        color: $darRed;
+        color: $darkRed;
 
         * {
-          color: $darRed;
+          color: $darkRed;
         }
       }
 

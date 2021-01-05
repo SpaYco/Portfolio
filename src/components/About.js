@@ -10,8 +10,9 @@ const About = () => (
   <div id="about" className="card">
     <Title title="About Me" />
     <p className="description">
-      A skilled Full-Stack Web Developer who loves making good UI Pages,
-      studied at Microverse and experienced in remote work
+      I&apos;m a skilled Full-Stack Web Developer who loves making pages with beautiful UI.
+      <br />
+      I studied at Microverse and I am experienced in remote work.
       <br />
       <ul>
         {skills.map(skill => (
