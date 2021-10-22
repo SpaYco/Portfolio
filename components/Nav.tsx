@@ -1,52 +1,43 @@
 import type { NextPage } from "next";
-import Image from 'next/image';
-import github from '../assets/images/github.png';
+import Image from "next/image";
+import info from "../assets/vector/info.svg";
+import contact from "../assets/vector/contact.svg";
+import file from "../assets/vector/file.svg";
+import code from "../assets/vector/code.svg";
 
-const Nav: NextPage = () => {
+interface Props {
+  status: boolean;
+}
+
+const Nav: NextPage<Props> = ({ status }) => {
   return (
-    <nav className='shadow-lg bg-white fixed top-0'>
-      <div className='flex flex-wrap place-items-center'>
-        <section className='relative mx-auto'>
-          <nav className='flex justify-between bg-gray-900 text-white w-screen'>
-            <div className='px-5 xl:px-12 py-6 flex w-full items-center'>
-              <ul className='md:flex font-semibold font-heading space-x-12'>
-                <li>
-                  <a className='p-4 duration-75 border border-gray-200 border-solid border-opacity-0 hover:border-opacity-100' href='#about'>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className='p-4 duration-75 border border-gray-200 border-solid border-opacity-0 hover:border-opacity-100' href='#projects'>
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className='p-4 duration-75 border border-gray-200 border-solid border-opacity-0 hover:border-opacity-100' href='#resume'>
-                    Resume
-                  </a>
-                </li>
-                <li>
-                  <a className='p-4 duration-75 border border-gray-200 border-solid border-opacity-0 hover:border-opacity-100' href='#contact'>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <a 
-            href="https://www.github.com/SpaYco/portfolio"
-            className='text-center h-full mt-2 mr-1'
-            target='_blank'
-            rel="noreferrer"
-            >
-            <Image
-              src={github}
-              alt='github logo linking to source code'
-              layout="fixed"
-            />
-            </a>
-          </nav>
-        </section>
-      </div>
+    <nav className={status ? "show-nav" : "hide-nav"}>
+      <ul>
+        <li>
+          <a className='nav-link' href='#about'>
+            <Image src={info} alt='info icon' />
+            <p>About</p>
+          </a>
+        </li>
+        <li>
+          <a className='nav-link' href='#projects'>
+            <Image src={code} alt='code icon' />
+            <p>Projects</p>
+          </a>
+        </li>
+        <li>
+          <a className='nav-link' href='#resume'>
+            <Image src={file} alt='file icon' />
+            <p>Resume</p>
+          </a>
+        </li>
+        <li>
+          <a className='nav-link' href='#contact'>
+            <Image src={contact} alt='contact icon' />
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };

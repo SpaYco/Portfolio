@@ -1,0 +1,83 @@
+$white: #d4d4d4
+$gray: #707070
+$black: #1f1f1f
+$dark-red: #731010
+$light-red: #a80000
+  
+*
+  box-sizing: border-box
+  scroll-behavior: smooth
+  margin: 0
+  padding: 0
+
+html,
+body
+  padding: 0
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+
+a
+  color: inherit
+  text-decoration: none
+
+.show-nav 
+  right: 0
+
+.hide-nav
+  right: -150px
+
+  
+nav
+  position: fixed
+  top: 0
+  height: 100vh
+  margin: 0
+  background-color: $black
+  padding: 25px
+  border-left: 3px solid $dark-red
+  transition: 750ms
+  ul
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100%
+    width: 100%
+    li
+      list-style-type: none
+      a
+        color: $white
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin: 25px 0
+        transition: 350ms
+        img
+          width: 45px
+          height: 45px
+        &:hover
+          color: $light-red
+.hamburger-menu
+  position: fixed
+  right: 25px
+  top: 15px
+  background-color: transparent
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  transition: 250ms
+  z-index: 99
+  img
+    width: 50px
+    height: 50px
+  &:hover
+    background-color: #7e7e7e52
+
+.active-ham
+  transform: rotate(90deg)
+  filter: invert(100%)
+.inactive-ham
+  transform: rotate(0deg)
+  filter: invert(0%)
+          
