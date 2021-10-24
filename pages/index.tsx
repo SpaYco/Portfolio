@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       initial={true}
       exitBeforeEnter={true}
       >
-      {checkPage('about') && <About />}
+      {checkPage('about') && <About setPage={setPage}/>}
       </AnimatePresence>
       <Nav checkPage={checkPage} setPage={setPage}/>
     </>

@@ -2,7 +2,11 @@ import type { NextPage } from "next";
 import { motion } from "framer-motion";
 import Background from "./Background";
 
-const About: NextPage = () => {
+type Props = {
+  setPage:  (page: string) => void;
+};
+
+const About: NextPage<Props> = ({setPage}) => {
   return (
     <motion.section className='about'>
       <Background />
@@ -35,7 +39,7 @@ const About: NextPage = () => {
         If you like what you see and have a project you need coded,
         <br />
          don’t
-        hestiate to <a href='#contact'>contact me</a>.
+        hestiate to <a href='#contact' onClick={() => setPage("contact")}>contact me</a>.
       </motion.p>
     </motion.section>
   );
