@@ -14,6 +14,7 @@ const Background: NextPage = () => {
         initial={{ x: "600px", y: 0, rotate: "0deg", opacity: 0 }}
         animate={{ x: "1200px", y: 0, rotate: "80deg", opacity: 1 }}
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
+        exit={{ x: "600px", y: 0, rotate: "0deg", opacity: 0 }}
       >
         <Image src={square} alt='square' />
       </motion.figure>
@@ -21,6 +22,7 @@ const Background: NextPage = () => {
         initial={{ x: "300px", y: 0, rotate: "0deg", opacity: 0 }}
         animate={{ x: "-300px", rotate: "80deg", opacity: 1 }}
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
+        exit={{ x: "300px", y: 0, rotate: "0deg", opacity: 0 }}
       >
         <Image src={triangle} alt='triangle' />
       </motion.figure>
@@ -36,6 +38,7 @@ const Background: NextPage = () => {
         initial={{ x: "-300px", y: 0, rotate: "0deg", opacity: 0 }}
         animate={{ x: "-300px", y: "-300px", rotate: "180deg", opacity: 1 }}
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
+        exit={{ x: "-300px", y: 0, rotate: "0deg", opacity: 0 }}
       >
         <Image src={code} alt='code' />
       </motion.figure>
@@ -43,6 +46,7 @@ const Background: NextPage = () => {
         initial={{ x: "-600px", y: 0, rotate: "0deg", opacity: 0 }}
         animate={{ x: "-100px", y: "-300px", rotate: "80deg", opacity: 1 }}
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
+        exit={{ x: "-600px", y: 0, rotate: "0deg", opacity: 0 }}
       >
         <Image src={star} alt='star' />
       </motion.figure>
