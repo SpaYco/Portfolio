@@ -19,13 +19,13 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Nav checkPage={checkPage} setPage={setPage}/>
       <AnimatePresence
       initial={true}
       exitBeforeEnter={true}
       >
       {checkPage('about') && <About />}
       </AnimatePresence>
+      <Nav checkPage={checkPage} setPage={setPage}/>
     </>
   );
 };
