@@ -7,8 +7,8 @@ import file from "../assets/vector/file.svg";
 import code from "../assets/vector/code.svg";
 
 interface Props {
-  checkPage: Function;
-  setPage: Function;
+  checkPage: (currentPage: string) => boolean;
+  setPage: (page: string) => void;
 }
 
 const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
