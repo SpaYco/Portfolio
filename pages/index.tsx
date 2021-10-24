@@ -1,31 +1,45 @@
 import type { NextPage } from "next";
-import { useState } from 'react';
+import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Nav from "../components/Nav";
 import About from "../components/About";
+import Projects from "../components/Projects";
 import Head from "next/head";
 import Image from "next/image";
-import menu from "../assets/vector/menu.svg";
 
 const Home: NextPage = () => {
-  const [page, setPage] = useState<string>('about');
+  const [page, setPage] = useState<string>("about");
+  const [tempPage, setTempPage] = useState<string>("about");
+  const setNextPage = (page: string) => {
+    setTempPage(page);
+    setPage("");
+  };
 
   const checkPage = (currentPage: string) => {
     if (currentPage === page) {
       return true;
     }
     return false;
-  }
+  };
 
   return (
     <>
       <AnimatePresence
-      initial={true}
-      exitBeforeEnter={true}
+        initial={true}
+        exitBeforeEnter={true}
+        onExitComplete={() => setPage(tempPage)}
       >
-      {checkPage('about') && <About setPage={setPage}/>}
+        {checkPage("about") && <About setPage={setNextPage} />}
       </AnimatePresence>
-      <Nav checkPage={checkPage} setPage={setPage}/>
+
+      <AnimatePresence
+        initial={true}
+        exitBeforeEnter={true}
+        onExitComplete={() => setPage(tempPage)}
+      >
+        {checkPage("projects") && <Projects />}
+      </AnimatePresence>
+      <Nav checkPage={checkPage} setPage={setNextPage} />
     </>
   );
 };
