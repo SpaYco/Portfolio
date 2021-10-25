@@ -7,7 +7,7 @@ import Code from "../assets/vector/code.svg";
 
 interface Props {
   checkPage: (currentPage: string) => boolean;
-  setPage: (page: string) => void;
+  setPage: (target: string) => void;
 }
 
 const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
