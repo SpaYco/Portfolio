@@ -17,6 +17,13 @@ const Home: NextPage = () => {
     setPage("");
   };
 
+  const checkTempPage = (currentPage: string) => {
+    if (currentPage === tempPage) {
+      return true;
+    }
+    return false;
+  };
+
   const checkPage = (currentPage: string) => {
     if (currentPage === page) {
       return true;
@@ -26,6 +33,19 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>{tempPage.replace(/^\w/, c => c.toUpperCase())} | Portfolio</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta charSet='utf-8' />
+        <meta
+          name='keywords'
+          content='javascript, nextjs, reactjs, portfolio, SpaYco, Aziz, Mejri'
+        />
+        <meta name='author' content='Aziz Mejri' />
+        <meta name='copyright' content='Aziz Mejri' />
+        <meta name="robots" content="index,follow"/>
+        <meta name="language" content="English" />
+      </Head>
       <AnimatePresence
         initial={true}
         exitBeforeEnter={true}
@@ -49,7 +69,7 @@ const Home: NextPage = () => {
       >
         {checkPage("resume") && <Resume />}
       </AnimatePresence>
-      
+
       <AnimatePresence
         initial={true}
         exitBeforeEnter={true}
@@ -58,7 +78,7 @@ const Home: NextPage = () => {
         {checkPage("contact") && <Contact />}
       </AnimatePresence>
 
-      <Nav checkPage={checkPage} setPage={setNextPage} />
+      <Nav checkPage={checkTempPage} setPage={setNextPage} />
       <Social />
     </>
   );
