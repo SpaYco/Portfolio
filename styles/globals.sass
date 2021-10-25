@@ -334,3 +334,42 @@ section
       background-color: $light-red
       path
         fill: $white
+@media only screen and (max-width: 850px)
+  nav
+    background-color: $black
+    border-top: 1px solid $light-red
+    bottom: 0
+    left: 0
+    top: calc( 100% - 100px )
+    height: 100px
+    width: 100vw
+    ul
+      flex-direction: row
+      justify-content: space-around
+      width: 100%
+  section
+    padding-bottom: 100px
+  .projects
+    h2
+      font-size: 1.5rem
+      font-weight: 500
+      margin: 5px 0
+    .projects-list
+      max-width: 70vw
+  .resume
+    h2
+      font-size: 1.5rem
+      margin: 5px 0
+    .skills-container
+      .skills
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        h2
+          font-size: 1.2rem
+          margin: 5px 0
+  .contact
+      h2
+        font-size: 1.2rem
+        margin: 5px 0
+        max-width: 70vw
