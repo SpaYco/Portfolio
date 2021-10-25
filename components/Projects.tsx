@@ -7,11 +7,13 @@ const Projects: NextPage = () => {
   return (
     <section className='projects'>
       <motion.h2
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      exit={{ opacity: 0, y: -20 }}
-      >Here are some projects I&apos;ve worked on.</motion.h2>
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        exit={{ opacity: 0, y: -20 }}
+      >
+        Here are some projects I&apos;ve worked on.
+      </motion.h2>
       <div className='projects-list'>
         {projectsList.map((project, index) => (
           <motion.div
@@ -30,7 +32,7 @@ const Projects: NextPage = () => {
                 height='281'
               />
             </motion.figure>
-            <div className="project-text">
+            <div className='project-text'>
               <motion.h3>{project.name}</motion.h3>
               <motion.p>{project.description}</motion.p>
               <div className='links'>

@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import Background from "./Background";
 
 type Props = {
-  setPage:  (page: string) => void;
+  setPage: (page: string) => void;
 };
 
-const About: NextPage<Props> = ({setPage}) => {
+const About: NextPage<Props> = ({ setPage }) => {
   return (
     <section className='about'>
       <Background />
@@ -19,7 +19,7 @@ const About: NextPage<Props> = ({setPage}) => {
         Hey There. I&apos;m Aziz
       </motion.h2>
       <motion.h3
-        initial={{ opacity: 0}}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.25, delay: 0.18 }}
         exit={{ opacity: 0 }}
@@ -38,8 +38,11 @@ const About: NextPage<Props> = ({setPage}) => {
         <br />
         If you like what you see and have a project you need coded,
         <br />
-         don’t
-        hestiate to <a href='#' onClick={() => setPage("contact")}>contact me</a>.
+        don’t hestiate to{" "}
+        <a href='#' onClick={() => setPage("contact")}>
+          contact me
+        </a>
+        .
       </motion.p>
     </section>
   );

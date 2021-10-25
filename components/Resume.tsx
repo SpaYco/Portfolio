@@ -20,8 +20,8 @@ const Resume: NextPage = () => {
           transition={{ duration: 0.25, delay: 0.09 }}
           exit={{ opacity: 0, y: 20 }}
         >
-          <h2>Front-End:</h2> JavaScript, TypeScript, React, Redux, NextJS, Material-UI,
-          jQuery, HTML5, CSS3
+          <h2>Front-End:</h2> JavaScript, TypeScript, React, Redux, NextJS,
+          Material-UI, jQuery, HTML5, CSS3
         </motion.div>
         <motion.div
           className='skills'

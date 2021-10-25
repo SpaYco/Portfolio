@@ -34,7 +34,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{tempPage.replace(/^\w/, c => c.toUpperCase())} | Portfolio</title>
+        <title>
+          {tempPage.replace(/^\w/, (c) => c.toUpperCase())} | Portfolio
+        </title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta charSet='utf-8' />
         <meta
@@ -43,8 +45,8 @@ const Home: NextPage = () => {
         />
         <meta name='author' content='Aziz Mejri' />
         <meta name='copyright' content='Aziz Mejri' />
-        <meta name="robots" content="index,follow"/>
-        <meta name="language" content="English" />
+        <meta name='robots' content='index,follow' />
+        <meta name='language' content='English' />
       </Head>
       <AnimatePresence
         initial={true}

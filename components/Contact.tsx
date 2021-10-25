@@ -10,8 +10,8 @@ const Contact: NextPage = () => {
         transition={{ duration: 0.25 }}
         exit={{ opacity: 0, y: 20 }}
       >
-        I&apos;m always interested in hearing about new projects, so if you'd
-        like to chat please get in touch.
+        I&apos;m always interested in hearing about new projects, so if
+        you&apos;d like to chat please get in touch.
       </motion.h2>
       <form
         id='contact-form'
