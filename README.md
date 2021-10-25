@@ -2,7 +2,7 @@
 
 > This is a a portfolio to show case my projects
 
-![screenshot](./screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 ## Built With
 
@@ -20,8 +20,8 @@
 
 ## Getting Started
 
-- `yarn install`
-- `yarn start`
+- `npm install`
+- `npm run dev`
 
 ## Author
 

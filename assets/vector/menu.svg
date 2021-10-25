@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg class="vector shadow" height="12" viewBox="0 0 18 12" width="18" fill="#000000" version="1.1" id="svg23" sodipodi:docname="menu.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs id="defs27" />
+   <sodipodi:namedview id="namedview25" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="35.375" inkscape:cx="9.9363958" inkscape:cy="6.0070671" inkscape:window-width="1920" inkscape:window-height="1057" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg23" />
+   <path d="M -3,-6 H 21 V 18 H -3 Z" fill="none" id="path19" />
+   <path d="M 0,12 H 18 V 10 H 0 Z M 0,7 H 18 V 5 H 0 Z M 0,0 V 2 H 18 V 0 Z" id="path21" />
+</svg>
