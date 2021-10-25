@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Nav from "../components/Nav";
@@ -8,10 +10,12 @@ import Resume from "../components/Resume";
 import Contact from "../components/Contact";
 import Social from "../components/Social";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Home: NextPage = () => {
-  const [page, setPage] = useState<string>("about");
-  const [tempPage, setTempPage] = useState<string>("about");
+  const router = useRouter();
+  const [page, setPage] = useState<string>('');
+  const [tempPage, setTempPage] = useState<string>('');
   const setNextPage = (page: string) => {
     setTempPage(page);
     setPage("");
@@ -30,6 +34,20 @@ const Home: NextPage = () => {
     }
     return false;
   };
+
+  
+  const handleClick = (target: string) => {
+    router.push(`?section=${target}`)
+    setNextPage(target)
+  }
+
+  useEffect(()=>{
+    if(router.isReady){
+      const { section } = router.query;
+      setPage(section as string || 'about');
+      setTempPage(section as string || 'about');
+    }
+}, [router.isReady]);
 
   return (
     <>
@@ -53,7 +71,7 @@ const Home: NextPage = () => {
         exitBeforeEnter={true}
         onExitComplete={() => setPage(tempPage)}
       >
-        {checkPage("about") && <About setPage={setNextPage} />}
+        {checkPage("about") && <About setPage={handleClick} />}
       </AnimatePresence>
 
       <AnimatePresence
@@ -80,7 +98,7 @@ const Home: NextPage = () => {
         {checkPage("contact") && <Contact />}
       </AnimatePresence>
 
-      <Nav checkPage={checkTempPage} setPage={setNextPage} />
+      <Nav checkPage={checkTempPage} setPage={handleClick} />
       <Social />
     </>
   );
