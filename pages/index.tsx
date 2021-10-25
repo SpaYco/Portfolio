@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
+import Contact from "../components/Contact";
 import Head from "next/head";
 
 const Home: NextPage = () => {
@@ -40,13 +41,20 @@ const Home: NextPage = () => {
         {checkPage("projects") && <Projects />}
       </AnimatePresence>
 
-      
       <AnimatePresence
         initial={true}
         exitBeforeEnter={true}
         onExitComplete={() => setPage(tempPage)}
       >
         {checkPage("resume") && <Resume />}
+      </AnimatePresence>
+      
+      <AnimatePresence
+        initial={true}
+        exitBeforeEnter={true}
+        onExitComplete={() => setPage(tempPage)}
+      >
+        {checkPage("contact") && <Contact />}
       </AnimatePresence>
 
       <Nav checkPage={checkPage} setPage={setNextPage} />
