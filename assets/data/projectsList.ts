@@ -16,7 +16,7 @@ const projectsList: Project[] = [
     liveDemo: "https://betterbase.netlify.app/",
     stacks: ["JavaScript", "React", "Redux/RTK", "VSCode", "Ant Design"],
     image:
-      "https://raw.githubusercontent.com/SpaYco/BetterBase/main/screenshot.png",
+      "https://github.com/SpaYco/BetterBase/raw/main/screenshot.png",
   },
   {
     name: "UB Running",
