@@ -99,9 +99,9 @@ section
   width: 100vw
   max-width: 100%
   min-height: 100vh
+  display: flex
 
 .about
-  display: flex
   align-items: center
   justify-content: center
   flex-direction: column
@@ -150,7 +150,6 @@ section
     object-fit: cover
 
 .projects
-  display: flex
   align-items: center
   justify-content: center
   flex-direction: column
@@ -215,3 +214,45 @@ section
               background-color: $dark-red
               color: $white
               border: 1px solid $dark-red
+
+.resume
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  .skills-container
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    .skills
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      width: 80vw
+      max-width: 1200px
+      h2
+        font-size: 1.5rem
+        font-weight: 500
+        margin: 5px 0
+        padding-right: 5px
+        color: $light-red
+  a
+    font-weight: 300
+    text-decoration: none
+    background-color: $black
+    border: 1px solid $light-red
+    border-radius: 2px
+    padding: 10px
+    transition: 350ms
+    margin: 25px
+    h1
+      font-size: 1.5rem
+      font-weight: 500
+      margin: 5px 0
+      color: $light-red
+      transition: 350ms
+    &:hover
+      background-color: $dark-red
+      border: 1px solid $dark-red
+      h1
+        color: $white
