@@ -6,6 +6,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import Contact from "../components/Contact";
+import Social from "../components/Social";
 import Head from "next/head";
 
 const Home: NextPage = () => {
@@ -58,6 +59,7 @@ const Home: NextPage = () => {
       </AnimatePresence>
 
       <Nav checkPage={checkPage} setPage={setNextPage} />
+      <Social />
     </>
   );
 };

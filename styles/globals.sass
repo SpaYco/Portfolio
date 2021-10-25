@@ -303,3 +303,34 @@ section
       &:hover
         background-color: $dark-red
         border: 1px solid $dark-red
+
+.social
+  position: fixed
+  left: 0
+  top: 5vw
+  z-index: 5
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 10px 5px
+    width: 50px
+    height: 50px
+    background-color: transparent
+    border-radius: 5px
+    cursor: pointer
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 45px
+      height: 45px
+      transition: 250ms
+      path
+        width: 40px
+        height: 40px
+        transition: 250ms
+    &:hover
+      background-color: $light-red
+      path
+        fill: $white
