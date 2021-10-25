@@ -2,8 +2,7 @@
 
 > This is a a portfolio to show case my projects
 
-<!-- TODO: -->
-<!-- ![screenshot](./screenshot.png) -->
+![screenshot](./assets/images/screenshot.png)
 
 ## Built With
 
