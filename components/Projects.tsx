@@ -6,15 +6,21 @@ import projectsList from "./../assets/data/projectsList";
 const Projects: NextPage = () => {
   return (
     <section className='projects'>
-      <motion.h2>Here are some projects I&apos;ve worked on.</motion.h2>
+      <motion.h2
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0, y: -20 }}
+      >Here are some projects I&apos;ve worked on.</motion.h2>
       <div className='projects-list'>
-        {projectsList.map((project) => (
+        {projectsList.map((project, index) => (
           <motion.div
             key={project.name}
             className='project'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.7, delay: index * 0.2 }}
+            exit={{ opacity: 0 }}
           >
             <motion.figure>
               <Image
