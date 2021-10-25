@@ -20,7 +20,7 @@ const Resume: NextPage = () => {
           transition={{ duration: 0.7, delay: 0.7 }}
           exit={{ opacity: 0, y: 20 }}
         >
-          <h2>Front-End:</h2> JavaScript, TypeScript, React, Redux, Material-UI,
+          <h2>Front-End:</h2> JavaScript, TypeScript, React, Redux, NextJS, Material-UI,
           jQuery, HTML5, CSS3
         </motion.div>
         <motion.div
@@ -39,7 +39,7 @@ const Resume: NextPage = () => {
           transition={{ duration: 0.7, delay: 1.5 }}
           exit={{ opacity: 0, y: 20 }}
         >
-          <h2>Tools & Methods:</h2> Git, GitHub, Heroku, Netlify,
+          <h2>Tools & Methods:</h2> Git, GitHub, Heroku, Netlify, Fly.io,
           Mobile/Responsive Development, RSpec, Jest, Chrome Dev Tools, WSL,
           WebPack, Airtable
         </motion.div>
