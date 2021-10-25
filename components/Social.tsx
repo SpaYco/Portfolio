@@ -5,12 +5,7 @@ import Github from "../assets/vector/github.svg";
 import Twitter from "../assets/vector/twitter.svg";
 import Angel from "../assets/vector/angel.svg";
 
-interface Props {
-  checkPage: (currentPage: string) => boolean;
-  setPage: (page: string) => void;
-}
-
-const Nav: NextPage<Props> = () => {
+const Nav: NextPage = () => {
   return (
     <div className='social'>
       <ul>
