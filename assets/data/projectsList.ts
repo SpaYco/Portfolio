@@ -9,6 +9,16 @@ interface Project {
 
 const projectsList: Project[] = [
   {
+    name: "BetterBase",
+    link: "https://github.com/SpaYco/BetterBase",
+    description:
+      "A web page that can take JSON files (mainly from MetaBase), and render them in a table, where you can filter, sort, and do many other things without needing to fetch from the server again, or to write queries.",
+    liveDemo: "https://betterbase.netlify.app/",
+    stacks: ["JavaScript", "React", "Redux/RTK", "VSCode", "Ant Design"],
+    image:
+      "https://raw.githubusercontent.com/SpaYco/BetterBase/main/screenshot.png",
+  },
+  {
     name: "UB Running",
     link: "https://github.com/Spayco/UB-Running",
     description:
