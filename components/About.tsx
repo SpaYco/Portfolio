@@ -13,7 +13,7 @@ const About: NextPage<Props> = ({setPage}) => {
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 1.2 }}
+        transition={{ duration: 0.25, delay: 0.09 }}
         exit={{ opacity: 0, y: -100 }}
       >
         Hey There. I&apos;m Aziz
@@ -21,7 +21,7 @@ const About: NextPage<Props> = ({setPage}) => {
       <motion.h3
         initial={{ opacity: 0}}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 1.9 }}
+        transition={{ duration: 0.25, delay: 0.18 }}
         exit={{ opacity: 0 }}
       >
         I&apos;m a Full Stack Developer
@@ -29,7 +29,7 @@ const About: NextPage<Props> = ({setPage}) => {
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 2.4 }}
+        transition={{ duration: 0.25, delay: 0.24 }}
         exit={{ opacity: 0, y: 100 }}
       >
         I can help you build a product, feature or website

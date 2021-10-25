@@ -1,4 +1,4 @@
-import type { NextPage } from "nex/types";
+import type { NextPage } from "next/types";
 import { motion } from "framer-motion";
 
 const Contact: NextPage = () => {
@@ -7,7 +7,7 @@ const Contact: NextPage = () => {
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.2 }}
+        transition={{ duration: 0.25 }}
         exit={{ opacity: 0, y: 20 }}
       >
         I&apos;m always interested in hearing about new projects, so if you'd
@@ -21,7 +21,7 @@ const Contact: NextPage = () => {
         <motion.input
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.7 }}
+          transition={{ duration: 0.25, delay: 0.09 }}
           exit={{ opacity: 0, y: 20 }}
           type='text'
           name='fullname'
@@ -33,7 +33,7 @@ const Contact: NextPage = () => {
         <motion.input
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.2 }}
+          transition={{ duration: 0.25, delay: 0.13 }}
           exit={{ opacity: 0, y: 20 }}
           type='email'
           id='email'
@@ -44,7 +44,7 @@ const Contact: NextPage = () => {
         <motion.textarea
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.8 }}
+          transition={{ duration: 0.25, delay: 0.18 }}
           exit={{ opacity: 0, y: 20 }}
           id='message'
           name='message'
@@ -56,7 +56,7 @@ const Contact: NextPage = () => {
           type='submit'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 2 }}
+          transition={{ duration: 0.15, delay: 0.2 }}
           exit={{ opacity: 0, y: 20 }}
         >
           Send

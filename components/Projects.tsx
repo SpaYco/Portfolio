@@ -9,7 +9,7 @@ const Projects: NextPage = () => {
       <motion.h2
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.7 }}
       exit={{ opacity: 0, y: -20 }}
       >Here are some projects I&apos;ve worked on.</motion.h2>
       <div className='projects-list'>
@@ -19,7 +19,7 @@ const Projects: NextPage = () => {
             className='project'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: index * 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             exit={{ opacity: 0 }}
           >
             <motion.figure>

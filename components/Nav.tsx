@@ -18,7 +18,7 @@ const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
           <motion.button
             initial={{ opacity: 0, x: 400 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, delay: 1.8 }}
+            transition={{ duration: 1.5, delay: 0.5 }}
             exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("about")}
             className={checkPage("about") ? "active-link" : ""}
@@ -31,7 +31,7 @@ const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
           <motion.button
             initial={{ opacity: 0, x: 400 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, delay: 1.84 }}
+            transition={{ duration: 1.5, delay: 0.54 }}
             exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("projects")}
             className={checkPage("projects") ? "active-link" : ""}
@@ -44,7 +44,7 @@ const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
           <motion.button
             initial={{ opacity: 0, x: 400 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, delay: 1.88 }}
+            transition={{ duration: 1.5, delay: 0.58 }}
             exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("resume")}
             className={checkPage("resume") ? "active-link" : ""}
@@ -57,7 +57,7 @@ const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
           <motion.button
             initial={{ opacity: 0, x: 400 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, delay: 1.92 }}
+            transition={{ duration: 1.5, delay: 0.62 }}
             exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("contact")}
             className={checkPage("contact") ? "active-link" : ""}

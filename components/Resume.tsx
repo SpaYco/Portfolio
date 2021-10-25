@@ -8,7 +8,7 @@ const Resume: NextPage = () => {
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.25 }}
           exit={{ opacity: 0, y: 20 }}
         >
           Here&apos;s some of my skills:
@@ -17,7 +17,7 @@ const Resume: NextPage = () => {
           className='skills'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.7 }}
+          transition={{ duration: 0.25, delay: 0.09 }}
           exit={{ opacity: 0, y: 20 }}
         >
           <h2>Front-End:</h2> JavaScript, TypeScript, React, Redux, NextJS, Material-UI,
@@ -27,7 +27,7 @@ const Resume: NextPage = () => {
           className='skills'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1 }}
+          transition={{ duration: 0.25, delay: 0.14 }}
           exit={{ opacity: 0, y: 20 }}
         >
           <h2>Back-End:</h2> Ruby, Ruby on Rails, MySQL
@@ -36,7 +36,7 @@ const Resume: NextPage = () => {
           className='skills'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.5 }}
+          transition={{ duration: 0.25, delay: 0.19 }}
           exit={{ opacity: 0, y: 20 }}
         >
           <h2>Tools & Methods:</h2> Git, GitHub, Heroku, Netlify, Fly.io,
@@ -47,7 +47,7 @@ const Resume: NextPage = () => {
           className='skills'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.9 }}
+          transition={{ duration: 0.25, delay: 0.24 }}
           exit={{ opacity: 0, y: 20 }}
         >
           <h2>Professional:</h2> Remote Pair-Programming, Teamwork, Mentoring,
@@ -57,7 +57,7 @@ const Resume: NextPage = () => {
       <motion.a
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 2 }}
+        transition={{ duration: 0.25, delay: 0.29 }}
         exit={{ opacity: 0, y: 20 }}
         href='https://docs.google.com/document/d/1lYq0Kb50TujzJzDWGobIchRI17JMnAiZMF9OBQgNU68/edit?usp=sharing'
         target='_blank'
