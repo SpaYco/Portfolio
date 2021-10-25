@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import square from "./../assets/vector/square.svg";
-import triangle from "./../assets/vector/triangle.svg";
-import circle from "./../assets/vector/circle.svg";
-import code from "./../assets/vector/code-bg.svg";
-import star from "./../assets/vector/star.svg";
+import Square from "./../assets/vector/square.svg";
+import Triangle from "./../assets/vector/triangle.svg";
+import Circle from "./../assets/vector/circle.svg";
+import Code from "./../assets/vector/code-bg.svg";
+import Star from "./../assets/vector/star.svg";
 
 const Background: NextPage = () => {
   return (
@@ -16,7 +16,7 @@ const Background: NextPage = () => {
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
         exit={{ x: "600px", y: 0, rotate: "0deg", opacity: 0 }}
       >
-        <Image src={square} alt='square' />
+        <Square />
       </motion.figure>
       <motion.figure
         initial={{ x: "300px", y: 0, rotate: "0deg", opacity: 0 }}
@@ -24,7 +24,7 @@ const Background: NextPage = () => {
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
         exit={{ x: "300px", y: 0, rotate: "0deg", opacity: 0 }}
       >
-        <Image src={triangle} alt='triangle' />
+        <Triangle />
       </motion.figure>
       <motion.figure
         initial={{ x: 0, y: 0, rotate: "0deg", opacity: 0 }}
@@ -32,7 +32,7 @@ const Background: NextPage = () => {
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
         exit={{ x: 0, y: 0, rotate: "0deg", opacity: 0 }}
       >
-        <Image src={circle} alt='circle' />
+        <Circle />
       </motion.figure>
       <motion.figure
         initial={{ x: "-300px", y: 0, rotate: "0deg", opacity: 0 }}
@@ -40,7 +40,7 @@ const Background: NextPage = () => {
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
         exit={{ x: "-300px", y: 0, rotate: "0deg", opacity: 0 }}
       >
-        <Image src={code} alt='code' />
+        <Code />
       </motion.figure>
       <motion.figure
         initial={{ x: "-600px", y: 0, rotate: "0deg", opacity: 0 }}
@@ -48,7 +48,7 @@ const Background: NextPage = () => {
         transition={{ duration: 1, type: "spring", stiffness: 100, delay: 0.5 }}
         exit={{ x: "-600px", y: 0, rotate: "0deg", opacity: 0 }}
       >
-        <Image src={star} alt='star' />
+        <Star />
       </motion.figure>
     </div>
   );

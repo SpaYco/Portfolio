@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import info from "../assets/vector/info.svg";
-import contact from "../assets/vector/contact.svg";
-import file from "../assets/vector/file.svg";
-import code from "../assets/vector/code.svg";
+import Info from "../assets/vector/info.svg";
+import Contact from "../assets/vector/contact.svg";
+import File from "../assets/vector/file.svg";
+import Code from "../assets/vector/code.svg";
 
 interface Props {
   checkPage: (currentPage: string) => boolean;
@@ -17,53 +16,53 @@ const Nav: NextPage<Props> = ({ checkPage, setPage }) => {
       <ul>
         <li>
           <motion.button
-            initial={{ opacity: 0, y: 400 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 400 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: 1.8 }}
-            exit={{ opacity: 0, y: 400 }}
+            exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("about")}
             className={checkPage("about") ? "active-link" : ""}
           >
-            <Image src={info} alt='info icon' />
+            <Info />
             <p>About</p>
           </motion.button>
         </li>
         <li>
           <motion.button
-            initial={{ opacity: 0, y: 400 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 400 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: 1.84 }}
-            exit={{ opacity: 0, y: 400 }}
+            exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("projects")}
             className={checkPage("projects") ? "active-link" : ""}
           >
-            <Image src={code} alt='code icon' />
+            <Code />
             <p>Projects</p>
           </motion.button>
         </li>
         <li>
           <motion.button
-            initial={{ opacity: 0, y: 400 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 400 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: 1.88 }}
-            exit={{ opacity: 0, y: 400 }}
+            exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("resume")}
             className={checkPage("resume") ? "active-link" : ""}
           >
-            <Image src={file} alt='file icon' />
+            <File />
             <p>Resume</p>
           </motion.button>
         </li>
         <li>
           <motion.button
-            initial={{ opacity: 0, y: 400 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 400 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5, delay: 1.92 }}
-            exit={{ opacity: 0, y: 400 }}
+            exit={{ opacity: 0, x: 400 }}
             onClick={() => setPage("contact")}
             className={checkPage("contact") ? "active-link" : ""}
           >
-            <Image src={contact} alt='contact icon' />
+            <Contact />
             <p>Contact</p>
           </motion.button>
         </li>

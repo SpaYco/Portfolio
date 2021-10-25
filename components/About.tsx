@@ -8,7 +8,7 @@ type Props = {
 
 const About: NextPage<Props> = ({setPage}) => {
   return (
-    <motion.section className='about'>
+    <section className='about'>
       <Background />
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
@@ -39,9 +39,9 @@ const About: NextPage<Props> = ({setPage}) => {
         If you like what you see and have a project you need coded,
         <br />
          don’t
-        hestiate to <a href='#contact' onClick={() => setPage("contact")}>contact me</a>.
+        hestiate to <a href='#' onClick={() => setPage("contact")}>contact me</a>.
       </motion.p>
-    </motion.section>
+    </section>
   );
 };
 

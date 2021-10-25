@@ -5,7 +5,6 @@ import Nav from "../components/Nav";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Head from "next/head";
-import Image from "next/image";
 
 const Home: NextPage = () => {
   const [page, setPage] = useState<string>("about");
