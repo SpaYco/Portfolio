@@ -42,9 +42,9 @@ const About: NextPage<Props> = ({ setPage }) => {
         If you like what you see and have a project you need coded,
         <br />
         don’t hestiate to{" "}
-        <a href='contact' onClick={() => setPage('contact')}>
+        <button onClick={() => setPage('contact')}>
           contact me
-        </a>
+        </button>
         .
       </motion.p>
     </section>
