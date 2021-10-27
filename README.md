@@ -8,10 +8,11 @@
 
 - HTML
 - CSS
-- SCSS
-- JavaScript
+- Sass
+- TypeScript
 - React
-- GitHub API
+- NextJS
+- Framer Motion
 
 ## Live Link
 
